@@ -1,4 +1,4 @@
-## Bamazon Store Application 
+## Hungry Hippo Application 
 
 **Contact:** ryanharrisfl@gmail.com
 
@@ -11,7 +11,7 @@
 * NPM Express Handlebars Package
 * NPM MySql Express Package
 * Bootstrap
-* HTML 
+* HTML
 * CSS 
 * Heroku 
 * GitHub 
