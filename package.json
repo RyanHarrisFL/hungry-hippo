@@ -1,0 +1,26 @@
+{
+  "name": "hungry-hippo",
+  "version": "1.0.0",
+  "description": "\"Feed the Hungry Hippo! Enter a food item into the input box and click the ADD FOOD button. The food item will appear under the Hippos menu. Click the CHOW TIME button and the food item will move into the Hungry Hippos belly.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanHarrisFL/hungry-hippo.git"
+  },
+  "author": "Ryan Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanHarrisFL/hungry-hippo/issues"
+  },
+  "homepage": "https://github.com/RyanHarrisFL/hungry-hippo#readme"
+}
