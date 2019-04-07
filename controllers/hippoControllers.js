@@ -2,19 +2,20 @@ var express = require("express");
 
 var router = express.Router();
 
-var cat = require("../hippo.js");
+var hippo = require("../hippo.js");
 
 // Create all our routes and set update logic for each route. 
 router.get("/", function(req, res) {
-    cat.all(function(data) {
+    hippo.all(function(data) {
       var hbsObject = {
-        cats: data
+        hippos: data
       };
       console.log(hbsObject);
       res.render("index", hbsObject);
     });
+     /*
   });
-  
+ 
   router.post("/api/cats", function(req, res) {
     cat.create([
       "name", "sleepy"
@@ -41,6 +42,7 @@ router.get("/", function(req, res) {
         res.status(200).end();
       }
     });
+    */
   });
   
   // Export routes for server.js to use.
