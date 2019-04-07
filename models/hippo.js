@@ -1,13 +1,12 @@
 
 var orm = require("../config/orm.js");
 
-var cat = {
+var hippo = {
   all: function(cb) {
     orm.all("hippos", function(res) {
       cb(res); 
     });
   },
-  // The variables cols and vals are arrays.
   create: function(cols, vals, cb) {
     orm.create("hippos", cols, vals, function(res) {
       cb(res);
@@ -20,5 +19,5 @@ var cat = {
   }
 };
 
-
+// Exports to the controller to run functions on the data to be sent to the model.
 module.exports = hippo;
