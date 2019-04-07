@@ -1,15 +1,17 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".change-devoured").on("click", function(event) {
+        event.preventDefault();
       var id = $(this).data("id");
-      var newFood = $(this).data("devoured");
+      var newFood = $(this).data("newfood");
   
       var newHungerState = {
         devoured: newFood
       };
+      console.log(newFood);
   
       // Send the PUT request.
-      $.ajax("/api/cats/" + id, {
+      $.ajax("/api/hippos/" + id, {
         type: "PUT",
         data: newHungerState
       }).then(

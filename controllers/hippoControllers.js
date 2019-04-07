@@ -10,7 +10,7 @@ router.get("/", function(req, res) {
       var hbsObject = {
         hippos: data
       };
-      console.log(hbsObject);
+     
       res.render("index", hbsObject);
     });
      
@@ -30,8 +30,6 @@ router.get("/", function(req, res) {
   
   router.put("/api/hippos/:id", function(req, res) {
     var condition = "id = " + req.params.id;
-  
-    console.log("condition", condition);
   
     hippo.update({
       devoured: req.body.devoured

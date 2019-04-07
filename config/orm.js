@@ -50,8 +50,6 @@ var orm = {
       cb(result);
     });
   },
-
-  /*
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
@@ -75,7 +73,7 @@ var orm = {
   // An example of objColVals would be {name: panther, sleepy: true}
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
-
+console.log(objColVals);
     queryString += " SET ";
     queryString += objToSql(objColVals);
     queryString += " WHERE ";
@@ -90,7 +88,7 @@ var orm = {
       cb(result);
     });
   },
-  */
+  
 };
 
 // Export the orm object for the model (hippo.js).

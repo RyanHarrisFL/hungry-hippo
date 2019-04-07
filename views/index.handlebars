@@ -7,7 +7,7 @@
     {{#unless devoured}}
       {{> hippos/hippo-block devoured=true}}
       <button class="change-devoured" data-id="{{id}}" data-newfood="{{devoured}}">
-		{{#if devoured}}LUNCH TIME!{{/if}}
+		{{#if devoured}}LUNCH TIME!{{else}}WAKE UP!{{/if}}
 	    </button>
     {{/unless}}
   {{/each}}
