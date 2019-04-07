@@ -1,0 +1,38 @@
+<h1>Cats!</h1>
+
+<h2>Choose a food to feed the hungry hippo!</h2>
+
+<ul>
+  {{#each hippos}}
+    {{#unless hungry}}
+      {{> hippos/hippo-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Food Eaten</h2>
+
+<ul>
+  {{#each hippos}}
+    {{#if hungry}}
+      {{> hippos/hippo-block sleep=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add Food for the Poor Hungry Hippo</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Hippo Name:</label>
+    <input type="text" id="ca" name="food-name">
+  </div>
+
+  {{!-- <div class="form-group">
+    <label for="sleepy">Sleepy?</label><br>
+    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
+    <input type="radio" name="sleepy" value="0"> Awake
+  </div> --}}
+
+  <button type="submit">ADD FOOD</button>
+</form>

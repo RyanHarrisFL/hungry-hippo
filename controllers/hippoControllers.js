@@ -2,7 +2,7 @@ var express = require("express");
 
 var router = express.Router();
 
-var hippo = require("../hippo.js");
+var hippo = require("../models/hippo.js");
 
 // Create all our routes and set update logic for each route. 
 router.get("/", function(req, res) {
