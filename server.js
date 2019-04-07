@@ -23,8 +23,8 @@ var routes = require("./controllers/hippoController.js");
 
 app.use(routes);
 
-// Start our server so that it can begin listening to client requests.
+// Starts server. 
 app.listen(PORT, function() {
-  // Log (server-side) when our server has started
+  //Log to verify which port the server is listening on. 
   console.log("Server listening on: http://localhost:" + PORT);
 });
