@@ -19,7 +19,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Importing of routes. Also gives server access to them.
-var routes = require("./controllers/hippoController.js");
+var routes = require("./controllers/hippoControllers.js");
 
 app.use(routes);
 
