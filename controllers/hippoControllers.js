@@ -30,6 +30,8 @@ router.get("/", function(req, res) {
   
   router.put("/api/hippos/:id", function(req, res) {
     var condition = "id = " + req.params.id;
+
+    console.log("condition", condition);
   
     hippo.update({
       devoured: req.body.devoured
