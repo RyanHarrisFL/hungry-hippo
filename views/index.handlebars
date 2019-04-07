@@ -4,7 +4,7 @@
 
 <ul>
   {{#each hippos}}
-    {{#unless hungry}}
+    {{#unless devoured}}
       {{> hippos/hippo-block devoured=true}}
     {{/unless}}
   {{/each}}
@@ -14,7 +14,7 @@
 
 <ul>
   {{#each hippos}}
-    {{#if hungry}}
+    {{#if devoured}}
       {{> hippos/hippo-block devoured=false}}
     {{/if}}
   {{/each}}
