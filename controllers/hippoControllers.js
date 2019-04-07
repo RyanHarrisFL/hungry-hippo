@@ -13,27 +13,28 @@ router.get("/", function(req, res) {
       console.log(hbsObject);
       res.render("index", hbsObject);
     });
-     /*
+     
   });
  
-  router.post("/api/cats", function(req, res) {
-    cat.create([
-      "name", "sleepy"
+  router.post("/api/hippos", function(req, res) {
+    hippo.create([
+      "name", "hungry"
     ], [
-      req.body.name, req.body.sleepy
+      req.body.name, req.body.hungry
     ], function(result) {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
+      
     });
   });
   
-  router.put("/api/cats/:id", function(req, res) {
+  router.put("/api/hippos/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     console.log("condition", condition);
   
-    cat.update({
-      sleepy: req.body.sleepy
+    hippo.update({
+      hungry: req.body.hungry
     }, condition, function(result) {
       if (result.changedRows == 0) {
         // If no rows were changed, then the ID must not exist, so 404
@@ -42,7 +43,7 @@ router.get("/", function(req, res) {
         res.status(200).end();
       }
     });
-    */
+    
   });
   
   // Export routes for server.js to use.

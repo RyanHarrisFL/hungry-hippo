@@ -1,7 +1,7 @@
 INSERT INTO hippos (food_name)
 VALUES ("lions");
 
-INSERT INTO hippos (food_name, devoured)
+INSERT INTO hippos (name, devoured)
 VALUES ("marbles", true);
 
 INSERT INTO hippos (food_name, devoured)
