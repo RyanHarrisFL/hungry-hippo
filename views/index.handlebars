@@ -1,4 +1,4 @@
-<h1>Cats!</h1>
+<h1>Hungry Hippo</h1>
 
 <h2>Choose a food to feed the hungry hippo!</h2>
 
@@ -7,7 +7,7 @@
     {{#unless devoured}}
       {{> hippos/hippo-block devoured=true}}
       <button class="change-devoured" data-id="{{id}}" data-newfood="{{devoured}}">
-		{{#if devoured}}LUNCH TIME!{{else}}WAKE UP!{{/if}}
+		{{#if devoured}}LUNCH TIME!{{else}}EAT ME!{{/if}}
 	    </button>
     {{/unless}}
   {{/each}}
@@ -30,12 +30,6 @@
     <label for="ca">Hippo Name:</label>
     <input type="text" id="ca" name="food-name">
   </div>
-
-  {{!-- <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div> --}}
 
   <button type="submit">ADD FOOD</button>
 </form>
