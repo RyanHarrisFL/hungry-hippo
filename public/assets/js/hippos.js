@@ -3,7 +3,7 @@ $(function() {
     $(".change-devoured").on("click", function(event) {
         event.preventDefault();
       var id = $(this).data("id");
-      var newFood = $(this).data("newfood");
+      var newFood = true;
   
       var newHungerState = {
         devoured: newFood
