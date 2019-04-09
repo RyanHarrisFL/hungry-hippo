@@ -40,7 +40,7 @@ next to one of the food items you would like him to eat. </p>
   <div class="row">
     <div class="col-6">
       <h2>Hugry Hippo Menu</h2>
-      <ul class="list-group">
+      <div>
         {{#each hippos}}
         {{#unless devoured}}
         {{> hippos/hippo-block devoured=true}}
@@ -49,18 +49,18 @@ next to one of the food items you would like him to eat. </p>
         </button>
         {{/unless}}
         {{/each}}
-      </ul>
+      </div>
 
     </div>
     <div class="col-6">
       <h2>Digested Food</h2>
-      <ul class="list-group">
+      <div>
         {{#each hippos}}
         {{#if devoured}}
         {{> hippos/hippo-block devoured=false}}
         {{/if}}
         {{/each}}
-      </ul>
+      </div>
 </div>
     </div>
   </div>
