@@ -1,13 +1,15 @@
 
 
-<div class="row">
-    <div class="col-6">
+<div class="row mt-5">
+    <div class="col-2"></div>
+    <div class="col-4">
       <img src="assets/images/hippo-clipart-hippo-outline-7.png">
     </div>
 
-    <div class="col-6">
-      <h1 class="text-center mt-5 ">The Very Hungry Hippo</h1>
+    <div class="col-4">
+      <h1>The Very Hungry Hippo</h1>
     </div>
+    <div class="col-2"></div>
   </div>
 </div>
 
@@ -37,7 +39,6 @@ next to one of the food items you would like him to eat. </p>
   <div class="row">
     <div class="col-6">
       <h2>Hugry Hippo Menu</h2>
-      <hr>
       <ul>
         {{#each hippos}}
         {{#unless devoured}}
@@ -52,7 +53,6 @@ next to one of the food items you would like him to eat. </p>
     </div>
     <div class="col-6">
       <h2>Digested Food</h2>
-      <hr>
       <ul>
         {{#each hippos}}
         {{#if devoured}}

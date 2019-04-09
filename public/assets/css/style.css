@@ -8,6 +8,10 @@ h1, h2 {
     font-family: 'Anton', sans-serif;
 }
 
+h2 {
+text-decoration: underline;
+}
+
 img {
     width: 400px;
     height: auto;
