@@ -28,18 +28,18 @@ next to one of the food items you would like him to eat. </p>
 <form class="create-form text-center">
 
   <div class="form-group">
-    <label for="ca">Hippo Name:</label>
     <input type="text" id="ca" name="food-name">
+    <button type="submit" class="btn btn-outline-dark">ADD FOOD</button>
   </div>
 
-  <button type="submit">ADD FOOD</button>
+  
 </form>
 
 <div class="text-center">
   <div class="row">
     <div class="col-6">
       <h2>Hugry Hippo Menu</h2>
-      <ul>
+      <ul class="list-group">
         {{#each hippos}}
         {{#unless devoured}}
         {{> hippos/hippo-block devoured=true}}
@@ -53,7 +53,7 @@ next to one of the food items you would like him to eat. </p>
     </div>
     <div class="col-6">
       <h2>Digested Food</h2>
-      <ul>
+      <ul class="list-group">
         {{#each hippos}}
         {{#if devoured}}
         {{> hippos/hippo-block devoured=false}}
