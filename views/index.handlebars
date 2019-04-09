@@ -43,10 +43,9 @@ next to one of the food items you would like him to eat. </p>
       <div>
         {{#each hippos}}
         {{#unless devoured}}
+        <div class="change-devoured" data-id="{{id}}" data-newfood="{{devoured}}"></div>
         {{> hippos/hippo-block devoured=true}}
-        <button class="change-devoured" data-id="{{id}}" data-newfood="{{devoured}}">
-          {{#if devoured}}LUNCH TIME!{{else}}EAT ME!{{/if}}
-        </button>
+        </div>
         {{/unless}}
         {{/each}}
       </div>
