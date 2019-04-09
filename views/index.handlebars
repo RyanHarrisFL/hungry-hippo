@@ -15,24 +15,37 @@
 
 <h2>Choose a food to feed the hungry hippo!</h2>
 
-<ul>
-  {{#each hippos}}
-    {{#unless devoured}}
-      {{> hippos/hippo-block devoured=true}}
-      <button class="change-devoured" data-id="{{id}}" data-newfood="{{devoured}}">
-		{{#if devoured}}LUNCH TIME!{{else}}EAT ME!{{/if}}
-	    </button>
-    {{/unless}}
-  {{/each}}
-</ul>
+
 
 <h2>Food Eaten</h2>
 
-<ul>
-  {{#each hippos}}
-    {{#if devoured}}
-      {{> hippos/hippo-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
 
+
+<div class="row">
+  <div class="col-6">
+
+    <ul>
+      {{#each hippos}}
+      {{#unless devoured}}
+      {{> hippos/hippo-block devoured=true}}
+      <button class="change-devoured" data-id="{{id}}" data-newfood="{{devoured}}">
+        {{#if devoured}}LUNCH TIME!{{else}}EAT ME!{{/if}}
+      </button>
+      {{/unless}}
+      {{/each}}
+    </ul>
+
+  </div>
+
+  <div class="col-6">
+    <ul>
+      {{#each hippos}}
+      {{#if devoured}}
+      {{> hippos/hippo-block devoured=false}}
+      {{/if}}
+      {{/each}}
+    </ul>
+
+  </div>
+</div>
+</div>
