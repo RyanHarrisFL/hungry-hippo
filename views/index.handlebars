@@ -1,8 +1,19 @@
-<h1 class="text-center">The Very Hungry Hippo</h1>
+<h1 class="text-center mt-5 ">The Very Hungry Hippo</h1>
 
-<img src="assets/images/hippo-clipart-hippo-outline-7.png" <p class="text-center">This poor hippo is hungry. Use
+ 
+ 
+
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <p class="text-center">This poor hippo is hungry. Use
 the form below to ADD FOOD to his menu. Click on the EAT IT button
 next to one of the food items you would like him to eat. </p>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
 
 <form class="create-form text-center">
 
@@ -18,6 +29,7 @@ next to one of the food items you would like him to eat. </p>
   <div class="row">
     <div class="col-6">
       <h2>Hugry Hippo Menu</h2>
+      <hr>
       <ul>
         {{#each hippos}}
         {{#unless devoured}}
@@ -32,6 +44,7 @@ next to one of the food items you would like him to eat. </p>
     </div>
     <div class="col-6">
       <h2>Digested Food</h2>
+      <hr>
       <ul>
         {{#each hippos}}
         {{#if devoured}}
