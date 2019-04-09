@@ -9,6 +9,6 @@ h1, h2 {
 }
 
 img {
-    min-width: 50%;
+    width: 25%;
     height: auto;
 }
